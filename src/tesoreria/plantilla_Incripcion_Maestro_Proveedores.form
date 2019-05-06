@@ -179,11 +179,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="ingrese NIT de empresa"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NIT_mestroProveedorActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="Nombre_mestroProveedor">
       <Properties>
         <Property name="text" type="java.lang.String" value="ingrese nombre de la empresa"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Nombre_mestroProveedorActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
@@ -194,6 +200,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="ingrese direccion"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Direccion_mestroProveedorActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
@@ -204,6 +213,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="ingrese telefono"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Telefono_mestroProveedorActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
@@ -214,6 +226,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="ingrese ciuadad"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Ciudad_mestroProveedorActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
@@ -224,16 +239,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="ingrese tipo"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Tipo_mestroProveedorActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Guardar_maestroProveedor">
       <Properties>
         <Property name="text" type="java.lang.String" value="Guardar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Guardar_maestroProveedorActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Cancela_mestroProveedor">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Cancela_mestroProveedorActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

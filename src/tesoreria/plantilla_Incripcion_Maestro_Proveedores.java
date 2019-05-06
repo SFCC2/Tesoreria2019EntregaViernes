@@ -5,6 +5,12 @@
  */
 package tesoreria;
 
+import Jva_centroCosto.MaestroProveedor;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus-PC
@@ -75,28 +81,68 @@ public class plantilla_Incripcion_Maestro_Proveedores extends javax.swing.JFrame
         jLabel3.setText("Nombre");
 
         NIT_mestroProveedor.setText("ingrese NIT de empresa");
+        NIT_mestroProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NIT_mestroProveedorActionPerformed(evt);
+            }
+        });
 
         Nombre_mestroProveedor.setText("ingrese nombre de la empresa");
+        Nombre_mestroProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Nombre_mestroProveedorActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("Direccion");
 
         Direccion_mestroProveedor.setText("ingrese direccion");
+        Direccion_mestroProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Direccion_mestroProveedorActionPerformed(evt);
+            }
+        });
 
         jLabel5.setText("Telefono");
 
         Telefono_mestroProveedor.setText("ingrese telefono");
+        Telefono_mestroProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Telefono_mestroProveedorActionPerformed(evt);
+            }
+        });
 
         jLabel6.setText("Ciudad");
 
         Ciudad_mestroProveedor.setText("ingrese ciuadad");
+        Ciudad_mestroProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Ciudad_mestroProveedorActionPerformed(evt);
+            }
+        });
 
         jLabel7.setText("Tipo");
 
         Tipo_mestroProveedor.setText("ingrese tipo");
+        Tipo_mestroProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Tipo_mestroProveedorActionPerformed(evt);
+            }
+        });
 
         Guardar_maestroProveedor.setText("Guardar");
+        Guardar_maestroProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Guardar_maestroProveedorActionPerformed(evt);
+            }
+        });
 
         Cancela_mestroProveedor.setText("Cancelar");
+        Cancela_mestroProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Cancela_mestroProveedorActionPerformed(evt);
+            }
+        });
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -180,6 +226,119 @@ public class plantilla_Incripcion_Maestro_Proveedores extends javax.swing.JFrame
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    int Nit = 01;
+    long Telefono = 1;
+    String nombre = "", direccion = "", ciudad = "", tipo = "";
+    //MaestroProveedor teacher = new MaestroProveedor(Nit, nombre, direccion, ciudad, tipo, Telefono);
+    Scanner sc = new Scanner(System.in);
+
+    /*    int a= Integer.parseInt(JOptionPane.showInputDialog("Escribir el nit empresa"));
+        String b = JOptionPane.showInputDialog("Escribir el nombre");
+        String c = JOptionPane.showInputDialog("ingrese la direccion");
+        String d = JOptionPane.showInputDialog("agrege una ciudad");        
+        String e = JOptionPane.showInputDialog("describa el tipo");
+        int f = Integer.parseInt(JOptionPane.showInputDialog("entregue el telefono"));*/
+    private void NIT_mestroProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NIT_mestroProveedorActionPerformed
+
+        //  Scanner sc = new Scanner(System.in);
+        // int a = sc.nextInt(); //String a = sc.next();
+        Nit = sc.nextInt();    // TODO add your handling code here:
+        System.out.println(Nit);
+        //teacher.setNit(Nit);
+    }//GEN-LAST:event_NIT_mestroProveedorActionPerformed
+
+    private void Nombre_mestroProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Nombre_mestroProveedorActionPerformed
+        // TODO add your handling code here:
+
+        // Scanner sc = new Scanner(System.in); String a = sc.next();
+        nombre = sc.next();
+        System.out.println(nombre);
+        //teacher.setNombre(nombre);
+    }//GEN-LAST:event_Nombre_mestroProveedorActionPerformed
+
+    private void Direccion_mestroProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Direccion_mestroProveedorActionPerformed
+        // TODO add your handling code here:
+
+        //Scanner sc = new Scanner(System.in); String a = sc.next();
+        direccion = sc.next();
+        System.out.println(direccion);
+        //teacher.setDireccion(direccion);
+    }//GEN-LAST:event_Direccion_mestroProveedorActionPerformed
+
+    private void Telefono_mestroProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Telefono_mestroProveedorActionPerformed
+        // TODO add your handling code here:
+
+        // Scanner sc = new Scanner(System.in);long a = sc.nextLong();
+        Telefono = sc.nextLong();
+        System.out.println(Telefono);
+        //teacher.setTelefono(Telefono);
+    }//GEN-LAST:event_Telefono_mestroProveedorActionPerformed
+
+    private void Ciudad_mestroProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Ciudad_mestroProveedorActionPerformed
+        // TODO add your handling code here:
+
+        // Scanner sc = new Scanner(System.in); String a = sc.next();
+        ciudad = sc.next();
+        System.out.println(ciudad);
+        //teacher.setCiudad(ciudad);
+    }//GEN-LAST:event_Ciudad_mestroProveedorActionPerformed
+
+    private void Tipo_mestroProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tipo_mestroProveedorActionPerformed
+        // TODO add your handling code here:
+
+        //  Scanner sc = new Scanner(System.in);  String a = sc.next();
+        tipo = sc.next();
+        System.out.println(tipo);
+        //teacher.setTipo(tipo);
+    }//GEN-LAST:event_Tipo_mestroProveedorActionPerformed
+    int cont = 0;
+
+    /*   int Nit=01;
+    long Telefono=1;
+    String nombre="", direccion="", ciudad="", tipo="";*/
+    private void Guardar_maestroProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Guardar_maestroProveedorActionPerformed
+        // TODO add your handling code here:
+        plantilla_Incripcion_Maestro_Proveedores admin = new plantilla_Incripcion_Maestro_Proveedores();
+
+        //String numCadena= Integer.toString(numEntero);
+        String nit = String.valueOf(Nit);
+        nit = this.NIT_mestroProveedor.getText();
+        String telefono = String.valueOf(Telefono);
+        telefono = this.Telefono_mestroProveedor.getText();
+        nombre = this.Nombre_mestroProveedor.getText();
+        direccion = this.Direccion_mestroProveedor.getText();
+        ciudad = this.Ciudad_mestroProveedor.getText();
+        tipo = this.Tipo_mestroProveedor.getText();
+        admin.crear(nit, telefono, nombre, direccion, ciudad, tipo);
+    }//GEN-LAST:event_Guardar_maestroProveedorActionPerformed
+    public void crear(String nit, String telefono, String nombre, String direccion, String ciudad, String tipo) {
+        cont++;
+        int nitt = Integer.parseInt(nit);
+        Nit = nitt;
+        int celular = Integer.parseInt(telefono);
+        Telefono = celular;
+
+        MaestroProveedor teacher = new MaestroProveedor(Nit, nombre, direccion, ciudad, tipo, Telefono);
+        List<MaestroProveedor> integrantes = new ArrayList<MaestroProveedor>();
+        integrantes.add(teacher);
+
+        String b = "#]identificacion)nombre\n";
+        int cont = 1;
+        for (MaestroProveedor proveedor : integrantes) {
+            System.out.println(cont + ", " + proveedor.getNit() + ", " + proveedor.getNombre()
+                    + proveedor.getDireccion() + proveedor.getCiudad() + proveedor.getTipo() + proveedor.getTelefono());
+            b += "\n" + cont + "] " + proveedor.getNit() + ") " + proveedor.getNombre() + ") "
+                    + proveedor.getDireccion() + ") " + proveedor.getCiudad() + ") " + proveedor.getTipo()
+                    + ") " + proveedor.getTelefono();
+            cont++;
+        }
+        JOptionPane.showMessageDialog(null, "\"lo almacenado es:\n " + b);
+
+    }
+    private void Cancela_mestroProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cancela_mestroProveedorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Cancela_mestroProveedorActionPerformed
 
     /**
      * @param args the command line arguments
